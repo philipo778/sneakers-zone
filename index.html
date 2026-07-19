@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- icon links -->
+     <script src="https://kit.fontawesome.com/0833b0931c.js" crossorigin="anonymous"></script>
+     <!-- font sneakers zone -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navigation-bar">
+            <div class="logo">
+                <p>Sneakers <span>Zone</span></p>
+            </div>
+
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="input-box">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+                <input type="text" placeholder="Search sneakers...">
+            </div>
+
+            <nav class="links desktop-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">shop</a></li>
+                    <li class="cart-item">
+                        <div class="cart-widget" aria-label="Shopping cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                            <span class="cart-label">Add to cart</span>
+                        </div>
+                    </li>
+                </ul>
+                <button>Sign in</button>
+            </nav>
+
+            <div class="mobile-sidebar-backdrop" id="mobileSidebarBackdrop"></div>
+
+            <aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
+                <div class="sidebar-header">
+                    <span>Menu</span>
+                    <button class="close-sidebar" type="button" " aria-label="Close menu">×</button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#home"><i class="fas fa-home" style="color: rgb(244, 172, 25);"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#home"><i class="fas fa-shopping-bag" style="color: rgb(244, 172, 25);"></i> Shop</a>
+                    </li>
+                    <li>
+                        <div class="cart-widget" aria-label="Shopping cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                            <span class="cart-label">Add to cart</span>
+                        </div>
+                    </li>
+                    <li><button class="sidebar-signin">Sign in</button></li>
+                </ul>
+            </aside>
+        </div>
+    </header>
+    <main>
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1 class="hero-heading">Step into the zone</h1>
+                <h2>Your dedicated destination for the rarest drops, premium collaborations, and everyday heat. No filler. Just sneakers.</h2>
+                <button class="hero-button">Shop Exclusives <span><i class="fas fa-arrow-right"></i></span></button>
+
+
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-shoes.png" style="width: 350px; height: auto;" alt="Hero Image">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+    </footer>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
