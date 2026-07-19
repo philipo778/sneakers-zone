@@ -1,4 +1,5 @@
 
+
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileSidebar = document.querySelector('#mobileSidebar');
 const sidebarBackdrop = document.querySelector('#mobileSidebarBackdrop');
