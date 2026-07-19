@@ -26,3 +26,27 @@ window.addEventListener('resize', () => {
         toggleSidebar(false);
     }
 });
+
+const togglePasswordButtons = document.querySelectorAll('.toggle-password');
+const showPasswordCheckboxes = document.querySelectorAll('.show-password-checkbox');
+
+togglePasswordButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const input = button.parentElement.querySelector('input');
+        const isHidden = input.type === 'password';
+        input.type = isHidden ? 'text' : 'password';
+        button.textContent = isHidden ? '🙈' : '👁';
+        button.setAttribute('aria-label', isHidden ? 'Hide password' : 'Show password');
+    });
+});
+
+showPasswordCheckboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', () => {
+        const form = checkbox.closest('.login-form');
+        const passwordFields = form ? form.querySelectorAll('input[type="password"]') : [];
+
+        passwordFields.forEach((input) => {
+            input.type = checkbox.checked ? 'text' : 'password';
+        });
+    });
+});

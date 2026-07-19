@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Sneakers Zone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+    <main class="login-shell">
+        <section class="login-card">
+            <h1>Sign in</h1>
+            <p>Welcome back to Sneakers Zone</p>
+
+            <form class="login-form">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <div class="password-field">
+                    <input id="password" type="password" placeholder="Enter your password" required>
+                    <button type="button" class="toggle-password" aria-label="Show password">👁</button>
+                </div>
+                <label class="check-password-label">
+                    <input type="checkbox" class="show-password-checkbox">
+                    Show password
+                </label>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p class="register-text">
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+
+            <a class="back-home" href="index.html">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Sneakers Zone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+    <main class="login-shell">
+        <section class="login-card">
+            <h1>Create Account</h1>
+            <p>Join Sneakers Zone and start your collection.</p>
+
+            <form class="login-form">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <div class="password-field">
+                    <input id="password" type="password" placeholder="Create a password" required>
+                    <button type="button" class="toggle-password" aria-label="Show password">👁</button>
+                </div>
+
+                <label for="confirm-password">Repeat Password</label>
+                <div class="password-field">
+                    <input id="confirm-password" type="password" placeholder="Repeat your password" required>
+                    <button type="button" class="toggle-password" aria-label="Show password">👁</button>
+                </div>
+                <label class="check-password-label">
+                    <input type="checkbox" class="show-password-checkbox">
+                    Show password
+                </label>
+
+                <button type="submit">Register</button>
+            </form>
+
+            <p class="register-text">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+
+            <a class="back-home" href="index.html">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>

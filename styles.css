@@ -128,7 +128,8 @@
     font-size: 0.75rem;
     color: var(--secondary);
 }
-button {
+button,
+.signin-btn {
     min-width: 100px;
     padding: 8px 14px;
     color: var(--primary);
@@ -137,6 +138,11 @@ button {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
 }
 
 
@@ -280,6 +286,115 @@ button {
 
 .site-footer p {
     line-height: 1.6;
+}
+
+.login-page {
+    background: #f5f7f6;
+}
+
+.login-shell {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.login-card {
+    width: min(420px, 100%);
+    padding: 28px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 12px 34px rgba(15, 85, 59, 0.12);
+}
+
+.login-card h1 {
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.login-card p {
+    margin-bottom: 20px;
+    color: #4b5563;
+}
+
+.login-form {
+    display: grid;
+    gap: 12px;
+}
+
+.login-form label {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.login-form input {
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid rgba(15, 85, 59, 0.2);
+    border-radius: 12px;
+    outline: none;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: 100%;
+    padding-right: 42px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    min-width: auto;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.check-password-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.check-password-label input {
+    width: auto;
+    height: auto;
+}
+
+.login-form button {
+    margin-top: 8px;
+}
+
+.register-text {
+    margin-top: 16px;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.register-text a {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
 }
 
 @media (max-width: 820px) {
