@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Sneakers Zone</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- icon links -->
+     <script src="https://kit.fontawesome.com/0833b0931c.js" crossorigin="anonymous"></script>
+     <!-- font sneakers zone -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navigation-bar">
+            <div class="logo">
+                <p>Sneakers <span>Zone</span></p>
+            </div>
+
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="input-box">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+                <input type="text" id="shopSearchInput" placeholder="Search sneakers...">
+            </div>
+
+            <nav class="links desktop-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active-link">shop</a></li>
+                    <li class="cart-item">
+                        <div class="cart-widget" aria-label="Shopping cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                            <span class="cart-label">Add to cart</span>
+                        </div>
+                    </li>
+                </ul>
+                <a class="signin-btn" href="login.html">Sign in</a>
+            </nav>
+
+            <div class="mobile-sidebar-backdrop" id="mobileSidebarBackdrop"></div>
+
+            <aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
+                <div class="sidebar-header">
+                    <span>Menu</span>
+                    <button class="close-sidebar" type="button" aria-label="Close menu">×</button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fas fa-home" style="color: rgb(244, 172, 25);"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="shop.html"><i class="fas fa-shopping-bag" style="color: rgb(244, 172, 25);"></i> Shop</a>
+                    </li>
+                    <li>
+                        <div class="cart-widget" aria-label="Shopping cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                            <span class="cart-label">Add to cart</span>
+                        </div>
+                    </li>
+                    <li><a class="signin-btn sidebar-signin" href="login.html" ">Sign in</a></li>
+                </ul>
+            </aside>
+        </div>
+    </header>
+
+    <main>
+        <div class="shop-heading">
+            <h1>Shop All Sneakers</h1>
+            <p id="resultsCount">Showing all sneakers</p>
+        </div>
+
+        <div class="shop-layout">
+            <!-- Mobile filter toggle -->
+            <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false" aria-controls="filterPanel">
+                <i class="fas fa-sliders-h"></i> Filters
+            </button>
+
+            <!-- Filters sidebar -->
+            <aside class="filter-panel" id="filterPanel">
+                <div class="filter-panel-header">
+                    <h2>Filters</h2>
+                    <button type="button" id="clearFilters" class="clear-filters-btn">Clear all</button>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Brand</h3>
+                    <div class="filter-options" data-filter="brand">
+                        <label><input type="checkbox" value="Nike"> Nike</label>
+                        <label><input type="checkbox" value="Adidas"> Adidas</label>
+                        <label><input type="checkbox" value="Puma"> Puma</label>
+                        <label><input type="checkbox" value="New Balance"> New Balance</label>
+                        <label><input type="checkbox" value="Vans"> Vans</label>
+                        <label><input type="checkbox" value="Converse"> Converse</label>
+                        <label><input type="checkbox" value="Reebok"> Reebok</label>
+                        <label><input type="checkbox" value="ASICS"> ASICS</label>
+                        <label><input type="checkbox" value="Under Armour"> Under Armour</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Category</h3>
+                    <div class="filter-options" data-filter="category">
+                        <label><input type="checkbox" value="Running"> Running</label>
+                        <label><input type="checkbox" value="Basketball"> Basketball</label>
+                        <label><input type="checkbox" value="Casual/Lifestyle"> Casual / Lifestyle</label>
+                        <label><input type="checkbox" value="Football/Soccer"> Football / Soccer</label>
+                        <label><input type="checkbox" value="Gym & Training"> Gym & Training</label>
+                        <label><input type="checkbox" value="Limited Edition"> Limited Edition</label>
+                        <label><input type="checkbox" value="Kids"> Kids Sneakers</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Gender</h3>
+                    <div class="filter-options" data-filter="gender">
+                        <label><input type="checkbox" value="male"> Male</label>
+                        <label><input type="checkbox" value="female"> Female</label>
+                        <label><input type="checkbox" value="unisex"> Unisex</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Size (EU)</h3>
+                    <div class="filter-options size-options" data-filter="size">
+                        <label><input type="checkbox" value="38"> 38</label>
+                        <label><input type="checkbox" value="39"> 39</label>
+                        <label><input type="checkbox" value="40"> 40</label>
+                        <label><input type="checkbox" value="41"> 41</label>
+                        <label><input type="checkbox" value="42"> 42</label>
+                        <label><input type="checkbox" value="43"> 43</label>
+                        <label><input type="checkbox" value="44"> 44</label>
+                        <label><input type="checkbox" value="45"> 45</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <label for="priceRange">Up to <span id="priceValue">$ 500</span></label>
+                        <input type="range" id="priceRange" min="70" max="500" step="10" value="500">
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Product results -->
+            <section class="product-results">
+                <div class="sort-bar">
+                    <label for="sortSelect">Sort by</label>
+                    <select id="sortSelect">
+                        <option value="default">Featured</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Name: A to Z</option>
+                    </select>
+                </div>
+
+                <div class="product-grid" id="productGrid">
+                    <!-- Product cards injected by shop.js -->
+                </div>
+
+                <p class="no-results" id="noResults" hidden>
+                    No sneakers match your filters. Try clearing a few and searching again.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="/size-guide">Size Guide / Conversion Chart</a>
+        </div>
+        <p>Copyright © 2026 Sneakers Zone. Built for sneakerheads who live for the perfect pair.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>
