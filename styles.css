@@ -502,6 +502,7 @@ button,
 
     .sidebar-signin {
         width: 100%;
+        color: var(--primary);
         /* max-width: 180px; */
 
     }
@@ -511,6 +512,12 @@ button,
         max-width: 360px;
         margin: 0 auto;
     }
+
+.mobile-sidebar .signin-btn,
+.mobile-sidebar .sidebar-signin {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
 }
 
 @media (max-width: 560px) {
